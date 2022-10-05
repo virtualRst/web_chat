@@ -18,10 +18,10 @@ export default function Header() {
           <li><Link to="/">Blog</Link></li>
           <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="category?type=business">Business</a></li>
+              <li><a href="category?type=culture">Culture</a></li>
+              <li><a href="category?type=lifetstyle">Lifestyle</a></li>
+              <li><a href="category?type=technology">Technology</a></li>
             </ul>
           </li>
           {/* <li><Link to="whats-new">What's New</Link></li> */}
@@ -35,8 +35,7 @@ export default function Header() {
         <a href="#" className="mx-2"><span className="bi-facebook"></span></a>
         <a href="#" className="mx-2"><span className="bi-twitter"></span></a>
         <a href="#" className="mx-2"><span className="bi-instagram"></span></a>
-
-        <a href="#" className="mx-2 js-search-open"><span className="bi-search"></span></a>
+        <a href="#" className="mx-2 js-search-open" style={{'display':'none'}}><span className="bi-search"></span></a>
         <i className="bi bi-list mobile-nav-toggle"></i>
 
         {/* <!-- ======= Search Form ======= --> */}
