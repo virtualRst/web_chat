@@ -25,8 +25,8 @@ export default function Header() {
             </ul>
           </li>
           {/* <li><Link to="whats-new">What's New</Link></li> */}
-          <li><Link to="/about">About us</Link></li>
-          <li><Link to="/contact">Contact us</Link></li>
+          {/* <li><Link to="/about">About us</Link></li> */}
+          {/* <li><Link to="/contact">Contact us</Link></li> */}
         </ul>
       </nav>
       {/* <!-- .navbar --> */}
@@ -34,7 +34,7 @@ export default function Header() {
       <div className="position-relative">
         <a href="#" className="mx-2"><span className="bi-facebook"></span></a>
         <a href="#" className="mx-2"><span className="bi-twitter"></span></a>
-        <a href="#" className="mx-2"><span className="bi-instagram"></span></a>
+        <a href="https://www.instagram.com/its_edithindia/" className="mx-2"><span className="bi-instagram"></span></a>
         <a href="#" className="mx-2 js-search-open" style={{'display':'none'}}><span className="bi-search"></span></a>
         <i className="bi bi-list mobile-nav-toggle"></i>
 
