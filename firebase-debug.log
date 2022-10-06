@@ -1,0 +1,17 @@
+[debug] [2022-10-06T18:46:39.823Z] ----------------------------------------------------------------------
+[debug] [2022-10-06T18:46:39.825Z] Command:       /snap/node/6742/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-10-06T18:46:39.825Z] CLI Version:   11.10.0
+[debug] [2022-10-06T18:46:39.825Z] Platform:      linux
+[debug] [2022-10-06T18:46:39.825Z] Node Version:  v16.17.1
+[debug] [2022-10-06T18:46:39.900Z] Time:          Fri Oct 07 2022 00:16:39 GMT+0530 (India Standard Time)
+[debug] [2022-10-06T18:46:39.900Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-06T18:46:39.974Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-06T18:46:39.975Z] > authorizing via signed-in user (rishabhtiwari821@gmail.com)
+[debug] [2022-10-06T18:46:39.975Z] [iam] checking project edith-india for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-06T18:46:39.986Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/edith-india:testIamPermissions [none]
+[debug] [2022-10-06T18:46:39.987Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/edith-india:testIamPermissions x-goog-quota-user=projects/edith-india
+[debug] [2022-10-06T18:46:39.987Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/edith-india:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-06T18:46:42.127Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/edith-india:testIamPermissions 200
+[debug] [2022-10-06T18:46:42.127Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/edith-india:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-06T18:46:42.128Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/edith-india [none]
