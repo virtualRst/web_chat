@@ -94,7 +94,7 @@ function Post() {
                                 </div>
 
                             </div>
-                            <Sidebar />
+                            {/* <Sidebar /> */}
                         </div>
                     </div>
                 </section>

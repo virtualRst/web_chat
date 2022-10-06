@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
-import BusinessPost from '../Components/Home/BusinessPost';
-import CulturePost from '../Components/Home/CulturePost';
-import LifestylePost from '../Components/Home/LifestylePost';
 import Slider from '../Components/Home/Slider';
-import TechPost from '../Components/Home/TechPost';
 import db from '../Components/Firebase';
 import CategoriesPost from '../Components/Home/CategoriesPost';
 

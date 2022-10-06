@@ -154,7 +154,7 @@ export default function Category() {
                   </div>
                 </div> */}
               </div>
-              <Sidebar />
+              {/* <Sidebar /> */}
 
             </div>
           </div>
