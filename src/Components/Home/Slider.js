@@ -17,13 +17,13 @@ export default function Slider() {
         }).catch(function (error) {
             console.log("Error getting document:", error);
         });
-        setTimeout(function(){
-            let elements=document.getElementsByClassName('swiper-slide');
-            elements[0].ariaLabel="4 / 4";
-            elements[1].ariaLabel="3 / 4";
-            elements[2].ariaLabel="2 / 4";
-            elements[3].ariaLabel="1 / 4";
-       }, 4000); 
+        setTimeout(function () {
+            let elements = document.getElementsByClassName('swiper-slide');
+            elements[0].ariaLabel = "4 / 4";
+            elements[1].ariaLabel = "3 / 4";
+            elements[2].ariaLabel = "2 / 4";
+            elements[3].ariaLabel = "1 / 4";
+        }, 4000);
     }, []);
     return (
         <section id="hero-slider" class="hero-slider">

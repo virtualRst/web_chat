@@ -24,7 +24,7 @@ function CategoryElement({cardData}) {
                 <div class="d-flex align-items-center author">
                     <div class="photo"><img src="assets/img/account.jpg" alt="" class="img-fluid" /></div>
                     <div class="name">
-                        <h3 class="m-0 p-0">Rishabh Tiwari</h3>
+                        <h3 class="m-0 p-0">{cardData.author_name}</h3>
                     </div>
                 </div>
             </div>

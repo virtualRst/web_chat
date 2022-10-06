@@ -93,7 +93,8 @@ export default function CategoriesPost({ category, title }) {
                     let data = doc.data();
                     let required = {
                         id: ids_arr[i],
-                        title: data.title
+                        title: data.title,
+                        author:data.author_name
                     }
                     if (i == 0) {
                         setOnetrending(required);
@@ -131,9 +132,9 @@ export default function CategoriesPost({ category, title }) {
                             <p class="mb-4 d-block">{body}</p>
 
                             <div class="d-flex align-items-center author">
-                                <div class="photo"><img src="assets/img/person-1.jpg" alt="" class="img-fluid" /></div>
+                                <div class="photo"><img src="assets/img/account.jpg" alt="" class="img-fluid" /></div>
                                 <div class="name">
-                                    <h3 class="m-0 p-0">Rishabh Tiwari</h3>
+                                    <h3 class="m-0 p-0">{main.author_name}</h3>
                                 </div>
                             </div>
                         </div>
@@ -186,35 +187,35 @@ export default function CategoriesPost({ category, title }) {
                                             <a href={"/post?id="+onetrending.id}>
                                                 <span class="number">1</span>
                                                 <h3>{onetrending.title}</h3>
-                                                <span class="author">Rishabh Tiwari</span>
+                                                <span class="author">{onetrending.author}</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href={"/post?id="+twotrending.id}>
                                                 <span class="number">2</span>
                                                 <h3>{twotrending.title}</h3>
-                                                <span class="author">Rishabh Tiwari</span>
+                                                <span class="author">{twotrending.author}</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href={"/post?id="+threetrending.id}>
                                                 <span class="number">3</span>
                                                 <h3>{threetrending.title}</h3>
-                                                <span class="author">Rishabh Tiwari</span>
+                                                <span class="author">{threetrending.author}</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href={"/post?id="+fourtrending.id}>
                                                 <span class="number">4</span>
                                                 <h3>{fourtrending.title}</h3>
-                                                <span class="author">Rishabh Tiwari</span>
+                                                <span class="author">{fourtrending.author}</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href={"/post?id="+fivetrending.id}>
                                                 <span class="number">5</span>
                                                 <h3>{fivetrending.title}</h3>
-                                                <span class="author">Rishabh Tiwari</span>
+                                                <span class="author">{fivetrending.author}</span>
                                             </a>
                                         </li>
                                     </ul>
