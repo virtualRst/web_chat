@@ -9,20 +9,33 @@ function Post() {
     const [post, setPost] = useState([]);
     const [imageOne, setImageOne] = useState([]);
     const [imageTwo, setImageTwo] = useState([]);
-    const [bodyOne,setBodyOne] = useState([]);
-    const [bodyTwo,setBodyTwo] = useState([]);
-    const [bodyThree,setBodyThree] = useState([]);
-    const [date,setDate] = useState("");
+    const [bodyOne, setBodyOne] = useState([]);
+    const [bodyTwo, setBodyTwo] = useState([]);
+    const [bodyThree, setBodyThree] = useState([]);
+    const [date, setDate] = useState("");
 
 
     useEffect(() => {
         const queryParams = new URLSearchParams(window.location.search);
         const id = queryParams.get('id');
         console.log(id);
-        if(id){
+        if (id) {
             getPostdata(id);
         }
     }, ['']);
+
+    useEffect(() => {
+        setTimeout(function () {
+            let id=post.post_id;
+            var docRef = db.collection("post").doc(id);
+            console.log(post);
+            let hits = post.hits + 1;
+            console.log(hits);
+            docRef.update({
+                'hits': hits
+            });
+        }, 8000);
+    }, [post]);
 
     const getPostdata = (id) => {
         console.log("IDs " + id);
@@ -31,12 +44,13 @@ function Post() {
             if (doc.exists) {
                 let data = doc.data();
                 console.log(data);
+                document.title = data.title;
                 setPost(data);
                 setBodyOne(data.body_array[0]);
                 setBodyTwo(data.body_array[1]);
                 setImageOne(data.image_array[0]);
                 setImageTwo(data.image_array[1]);
-                let normalDate=new Date(data.created_time.seconds*1000).toLocaleString('en-GB',{timeZone:'UTC'});
+                let normalDate = new Date(data.created_time.seconds * 1000).toLocaleString('en-GB', { timeZone: 'IST' });
                 setDate(normalDate);
             } else {
                 console.log("No such document!");

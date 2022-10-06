@@ -16,12 +16,12 @@ export default function Header() {
       <nav id="navbar" className="navbar">
         <ul>
           <li><Link to="/">Blog</Link></li>
-          <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="category"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="category?type=business">Business</a></li>
               <li><a href="category?type=culture">Culture</a></li>
               <li><a href="category?type=lifetstyle">Lifestyle</a></li>
-              <li><a href="category?type=technology">Technology</a></li>
+              <li><a href="category?type=Technical">Technical</a></li>
             </ul>
           </li>
           {/* <li><Link to="whats-new">What's New</Link></li> */}

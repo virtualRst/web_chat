@@ -17,6 +17,7 @@ export default function Home() {
     const [technical, setTecnical] = useState({});
 
     useEffect(() => {
+        document.title = 'EdithIndia';
         var docRef = db.collection("blog-data").doc("categories_post");
         docRef.get().then(doc => {
             if (doc.exists) {

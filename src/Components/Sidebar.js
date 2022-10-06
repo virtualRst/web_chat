@@ -140,7 +140,7 @@ function Sidebar() {
                 <ul className="aside-links list-unstyled">
                     <li><a href="category"><i className="bi bi-chevron-right"></i> Business</a></li>
                     <li><a href="category"><i className="bi bi-chevron-right"></i> Culture</a></li>
-                    <li><a href="category"><i className="bi bi-chevron-right"></i> Technology</a></li>
+                    <li><a href="category"><i className="bi bi-chevron-right"></i> Technical</a></li>
                     <li><a href="category"><i className="bi bi-chevron-right"></i> Lifestyle</a></li>
                 </ul>
             </div>

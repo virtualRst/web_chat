@@ -28,7 +28,7 @@ export default function Footer() {
               <li><a href="category?type=business"><i class="bi bi-chevron-right"></i> Business</a></li>
               <li><a href="category?type=culture"><i class="bi bi-chevron-right"></i> Culture</a></li>
               <li><a href="category?type=lifetstyle"><i class="bi bi-chevron-right"></i> LifetStyle</a></li>
-              <li><a href="category?type=technology"><i class="bi bi-chevron-right"></i> Technology</a></li>
+              <li><a href="category?type=Technical"><i class="bi bi-chevron-right"></i> Technical</a></li>
 
             </ul>
           </div>
