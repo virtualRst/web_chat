@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import db from '../Firebase';
+import SliderCards from './SliderCards';
 
 export default function Slider() {
     const [sliders, setSliders] = useState([]);
@@ -10,7 +11,6 @@ export default function Slider() {
                 let data = doc.data();
                 console.log(data.post_ids);
                 setSliders(data.post_ids);
-                // console.log("Document data:", );
             } else {
                 console.log("No such document!");
             }
@@ -34,13 +34,7 @@ export default function Slider() {
                             <div class="swiper-wrapper">
                                 {
                                     sliders.map((slider) => (
-                                        <div class="swiper-slide" aria-label="1 / 4">
-                                            <a href="/post" class="img-bg d-flex align-items-end" style={{ backgroundImage: `url(${slider.image})` }}>
-                                                <div class="img-bg-inner">
-                                                    <h2>{slider.title}</h2>
-                                                </div>
-                                            </a>
-                                        </div>
+                                        <SliderCards id={slider} />
                                     ))
                                 }
 

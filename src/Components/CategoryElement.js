@@ -8,7 +8,7 @@ function CategoryElement({cardData}) {
     useEffect(() => {
         setBodyOne(cardData.body_array[0]);
         setImageOne(cardData.image_array[0]);
-        let normalDate=new Date(cardData.created_time.seconds*1000).toLocaleString('en-GB',{timeZone:'IST'});
+        let normalDate=cardData.created_time;
         setDate(normalDate);
     }, ['']);
 

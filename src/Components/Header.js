@@ -20,7 +20,7 @@ export default function Header() {
             <ul>
               <li><a href="category?type=business">Business</a></li>
               <li><a href="category?type=culture">Culture</a></li>
-              <li><a href="category?type=lifetstyle">Lifestyle</a></li>
+              <li><a href="category?type=lifestyle">Lifestyle</a></li>
               <li><a href="category?type=Technical">Technical</a></li>
             </ul>
           </li>
