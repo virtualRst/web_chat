@@ -28,11 +28,11 @@ export default function Category() {
     docRef.get().then(snapshot => {
       if (!snapshot.empty) {
         let snapshotData=[];
-      snapshot.forEach((doc) => {
+        snapshot.forEach((doc) => {
         console.log(doc.data());
           snapshotData.push(doc.data());
         });
-        setCardData(snapshotData);
+        setCardData(snapshotData.reverse());
       } else {
         console.log("No such document!");
       }

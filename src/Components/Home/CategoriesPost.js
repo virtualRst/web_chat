@@ -121,7 +121,7 @@ export default function CategoriesPost({ category, title }) {
             <div class="container" data-aos="fade-up">
                 <div class="section-header d-flex justify-content-between align-items-center mb-5">
                     <h2>{title}</h2>
-                    <div><a href={"category?="+title} class="more">See All {title}</a></div>
+                    <div><a href={"category?type="+title} class="more">See All {title}</a></div>
                 </div>
                 <div class="row g-5">
                     <div class="col-lg-4">

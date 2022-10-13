@@ -64,14 +64,13 @@ function Post() {
         <div>
             <Header />
             <main id="main">
-
                 <section className="single-post-content">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-9 post-content" data-aos="fade-up">
 
                                 <div className="single-post">
-                                    <div className="post-meta"><span className="date">{post.category}</span> <span className="mx-1"></span> <span>{date}</span></div>
+                                    <div className="post-meta"><span className="date">{post.category}</span> <span className="mx-1">,</span> <span>{date}</span></div>
                                     <h1 className="mb-5">{post.title}</h1>
                                     <p><span className="firstcharacter"></span>{bodyOne}</p>
 
