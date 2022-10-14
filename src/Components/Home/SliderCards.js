@@ -25,7 +25,7 @@ function SliderCards({id}) {
     }, ['']);
     return (
         <div class="swiper-slide" aria-label="1 / 4">
-            <a href={"/post/"+cards.post_id} class="img-bg d-flex align-items-end" style={{ backgroundImage: `url(${imageOne})` }}>
+            <a href={"/post/"+cards.url_key} class="img-bg d-flex align-items-end" style={{ backgroundImage: `url(${imageOne})` }}>
                 <div class="img-bg-inner">
                     <h2>{cards.title}</h2>
                     <p>{short}</p>

@@ -35,6 +35,20 @@ const getCategoryMainData = (id) => {
     // }).catch(function (error) {
     //     console.log("Error getting document:", error);
     // });
+    // for (let i = 2029; i <= 2076; i++) {
+    //     var docRef = db.collection("post").doc(i.toString());
+    //     docRef.get().then(doc => {
+    //         if (doc.exists) {
+    //             let data = doc.data();
+    //             let url_key = data.title.toLowerCase().replace(/[^\w\s]| /gi,"-").replace(/--/g,"-");
+    //             db.collection("post").doc(i.toString()).update({ "url_key": url_key });
+    //         } else {
+    //             console.log("No such document!");
+    //         }
+    //     }).catch(function (error) {
+    //         console.log("Error getting document:", error);
+    //     });
+    // }
 }
 
 export {getCategoryMainData};

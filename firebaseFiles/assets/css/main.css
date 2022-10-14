@@ -759,7 +759,7 @@ section {
 .post-content figure {
   position: relative;
   left: 52%;
-  min-width: 990px;
+  /* min-width: 990px; */
   transform: translateX(-50%);
 }
 
@@ -1274,6 +1274,7 @@ section {
 .footer .footer-legal .social-links a {
   text-align: center;
   display: inline-block;
+  margin-left: 5px;
   width: 40px;
   height: 40px;
   background-color: rgba(var(--color-white-rgb), 0.09);

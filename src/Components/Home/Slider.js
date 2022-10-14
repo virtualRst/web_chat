@@ -17,6 +17,7 @@ export default function Slider() {
         }).catch(function (error) {
             console.log("Error getting document:", error);
         });
+
         setTimeout(function () {
             let elements = document.getElementsByClassName('swiper-slide');
             elements[0].ariaLabel = "4 / 4";

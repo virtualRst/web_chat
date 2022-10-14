@@ -13,7 +13,7 @@ function Post() {
     const [bodyTwo, setBodyTwo] = useState("");
     const [bodyThree, setBodyThree] = useState("");
     const [date, setDate] = useState("");
-    let {id} = useParams();
+    let { id } = useParams();
 
 
     useEffect(() => {
@@ -25,7 +25,7 @@ function Post() {
 
     useEffect(() => {
         setTimeout(function () {
-            let id=post.post_id.toString();
+            let id = post.post_id.toString();
             var docRef = db.collection("post").doc(id);
             console.log(post);
             let hits = post.hits + 1;
@@ -38,20 +38,24 @@ function Post() {
 
     const getPostdata = (id) => {
         console.log("IDs " + id);
-        var docRef = db.collection("post").doc(id);
-        docRef.get().then(doc => {
-            if (doc.exists) {
-                let data = doc.data();
-                console.log(data);
-                document.title = data.title;
-                setPost(data);
-                setBodyOne(data.body_array[0]);
-                setBodyTwo(data.body_array[1]);
-                setBodyThree(data.body_array[2]);
-                setImageOne(data.image_array[0]);
-                setImageTwo(data.image_array[1]);
-                let normalDate = data.created_time;
-                setDate(normalDate);
+        var docRef = db.collection("post").where("url_key", "==", id).limit(1);
+        docRef.get().then(snapshot => {
+            console.log(snapshot);
+            if (!snapshot.empty) {
+                snapshot.forEach((doc) => {
+                    console.log(doc.data());
+                    let data = doc.data();
+                    document.title = data.title;
+                    setPost(data);
+                    setBodyOne(data.body_array[0]);
+                    setBodyTwo(data.body_array[1]);
+                    setBodyThree(data.body_array[2]);
+                    setImageOne(data.image_array[0]);
+                    setImageTwo(data.image_array[1]);
+                    let normalDate = data.created_time;
+                    setDate(normalDate);
+                });
+
             } else {
                 console.log("No such document!");
             }
@@ -77,8 +81,8 @@ function Post() {
                                         <img src={imageOne} alt="" className="img-fluid" />
                                         {/* <figcaption>{bodyOne}</figcaption> */}
                                     </figure>
-                                    {bodyTwo.split('{new_para}').map((item)=>(
-                                    <p>{item}</p>
+                                    {bodyTwo.split('{new_para}').map((item) => (
+                                        <p>{item}</p>
                                     ))}
                                     {/* <p>Explicabo perspiciatis, laborum provident voluptates illum in nulla consectetur atque quaerat excepturi quisquam, veniam velit ex pariatur quos consequuntur? Excepturi reiciendis perferendis, cupiditate dolorem eos illum amet. Beatae voluptates nemo esse ratione voluptate, nesciunt fugit magnam veritatis voluptas dignissimos doloribus maiores? Aliquam, dolores natus exercitationem corrupti blanditiis, consequuntur nihil nobis sed voluptatibus maiores sunt, illo provident aliquid laborum. Vitae, ut.</p> */}
                                     {/* <p>Reprehenderit aut sed doloribus blanditiis, aspernatur magni? In molestias rem, similique ut esse repudiandae quod recusandae dolores neque earum omnis at, suscipit fuga? Minima qui veniam deserunt quisquam error amet at ratione nesciunt porro quis placeat repudiandae voluptatibus officiis fuga necessitatibus, expedita officia adipisci eaque labore accusamus? Nesciunt repellat illo exercitationem facilis similique quaerat, quis sequi? Praesentium nulla ipsam dolor.</p> */}
@@ -88,8 +92,8 @@ function Post() {
                                         <img src={imageTwo} alt="" className="img-fluid" />
                                         {/* <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, odit? </figcaption> */}
                                     </figure>
-                                    {bodyThree.split('{new_para}').map((item)=>(
-                                    <p>{item}</p>
+                                    {bodyThree.split('{new_para}').map((item) => (
+                                        <p>{item}</p>
                                     ))}
                                     {/* <p>Architecto ex id at illum aperiam corporis, quidem magnam doloribus non eligendi delectus laborum porro molestiae beatae eveniet dolor odit optio soluta dolores! Eaque odit a nihil recusandae, error repellendus debitis ex autem ab commodi, maiores officiis doloribus provident optio, architecto assumenda! Nihil cum laboriosam eos dolore aliquid perferendis amet doloremque quibusdam odio soluta vero odit, ipsa, quisquam quod nulla.</p> */}
                                     {/* <p>Consequuntur corrupti fugiat quod! Ducimus sequi nemo illo ad necessitatibus amet nobis corporis et quasi. Optio cum neque fuga. Ad excepturi magnam quisquam ex voluptatibus vitae aut nam quidem doloribus, architecto perspiciatis sit consequatur pariatur alias animi expedita quas? Et doloribus voluptatibus perferendis qui fugiat voluptatum autem facere aspernatur quidem quae assumenda iste, sit similique, necessitatibus laborum magni. Ea, dolores!</p> */}
