@@ -20,10 +20,10 @@ class App extends Component {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<About />} />
+            {/* <Route path="/contact" element={<Contact />} /> */}
+            {/* <Route path="/about" element={<About />} /> */}
             <Route path="/post" element={<Post />} />
-            <Route path="/post/:id" element={<Post />} />
+            {/* <Route path="/post/:id" element={<Post />} /> */}
             <Route path="/category" element={<Category />} />
           </Routes>
         </Router>

@@ -11,7 +11,6 @@ function CategoryElement({cardData}) {
         let normalDate=cardData.created_time;
         setDate(normalDate);
     }, ['']);
-
     return (
         <div class="d-md-flex post-entry-2 half">
             <a href={"/post?id="+cardData.post_id} class="me-4 thumbnail">
