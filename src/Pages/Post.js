@@ -13,11 +13,10 @@ function Post() {
     const [bodyTwo, setBodyTwo] = useState("");
     const [bodyThree, setBodyThree] = useState("");
     const [date, setDate] = useState("");
+    let {id} = useParams();
 
 
     useEffect(() => {
-        const queryParams = new URLSearchParams(window.location.search);
-        const id = queryParams.get('id');
         console.log(id);
         if (id) {
             getPostdata(id);

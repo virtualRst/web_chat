@@ -4,15 +4,17 @@ import Header from '../Components/Header'
 import Sidebar from '../Components/Sidebar'
 import db from '../Components/Firebase'
 import CategoryElement from '../Components/CategoryElement'
+import { useParams } from 'react-router-dom'
 
 export default function Category() {
   const [cardData,setCardData] = useState([]);
   const [catType,setCatType] = useState("");
+  let {type}=useParams();
 
   useEffect(() => {
-    const queryParams = new URLSearchParams(window.location.search);
-    const type = queryParams.get('type');
-    console.log(type);
+    // const queryParams = new URLSearchParams(window.location.search);
+    // const type = queryParams.get('type');
+    // console.log(type);
     if (type) {
     setCatType(type);
       getPostdata(type);

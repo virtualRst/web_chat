@@ -25,10 +25,10 @@ export default function Footer() {
           <div class="col-6 col-lg-2">
             <h3 class="footer-heading">Categories</h3>
             <ul class="footer-links list-unstyled">
-              <li><a href="category?type=business"><i class="bi bi-chevron-right"></i> Business</a></li>
-              <li><a href="category?type=culture"><i class="bi bi-chevron-right"></i> Culture</a></li>
-              <li><a href="category?type=lifestyle"><i class="bi bi-chevron-right"></i> LifetStyle</a></li>
-              <li><a href="category?type=technical"><i class="bi bi-chevron-right"></i> Technical</a></li>
+              <li><a href="/category/business"><i class="bi bi-chevron-right"></i> Business</a></li>
+              <li><a href="/category/culture"><i class="bi bi-chevron-right"></i> Culture</a></li>
+              <li><a href="/category/lifestyle"><i class="bi bi-chevron-right"></i> LifetStyle</a></li>
+              <li><a href="/category/technical"><i class="bi bi-chevron-right"></i> Technical</a></li>
 
             </ul>
           </div>

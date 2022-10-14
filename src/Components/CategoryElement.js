@@ -13,12 +13,12 @@ function CategoryElement({cardData}) {
     }, ['']);
     return (
         <div class="d-md-flex post-entry-2 half">
-            <a href={"/post?id="+cardData.post_id} class="me-4 thumbnail">
+            <a href={"/post/"+cardData.post_id} class="me-4 thumbnail">
                 <img src={imageOne} alt="" class="img-fluid" />
             </a>
             <div>
                 <div class="post-meta"><span class="date">{cardData.category}</span> <span class="mx-1"></span> <span>{date}</span></div>
-                <h3><a href={"/post?id="+cardData.post_id}>{cardData.title}</a></h3>
+                <h3><a href={"/post/"+cardData.post_id}>{cardData.title}</a></h3>
                 <p>{bodyOne}</p>
                 <div class="d-flex align-items-center author">
                     <div class="photo"><img src="assets/img/account.jpg" alt="" class="img-fluid" /></div>

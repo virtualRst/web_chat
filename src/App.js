@@ -23,8 +23,9 @@ class App extends Component {
             {/* <Route path="/contact" element={<Contact />} /> */}
             {/* <Route path="/about" element={<About />} /> */}
             <Route path="/post" element={<Post />} />
-            {/* <Route path="/post/:id" element={<Post />} /> */}
+            <Route path="/post/:id" element={<Post />} />
             <Route path="/category" element={<Category />} />
+            <Route path="/category/:type" element={<Category />} />
           </Routes>
         </Router>
 

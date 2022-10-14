@@ -18,10 +18,10 @@ export default function Header() {
           <li><Link to="/">Blog</Link></li>
           <li class="dropdown"><a href="category"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="category?type=business">Business</a></li>
-              <li><a href="category?type=culture">Culture</a></li>
-              <li><a href="category?type=lifestyle">Lifestyle</a></li>
-              <li><a href="category?type=Technical">Technical</a></li>
+              <li><a href="/category/business">Business</a></li>
+              <li><a href="/category/culture">Culture</a></li>
+              <li><a href="/category/lifestyle">Lifestyle</a></li>
+              <li><a href="/category/Technical">Technical</a></li>
             </ul>
           </li>
           {/* <li><Link to="whats-new">What's New</Link></li> */}
