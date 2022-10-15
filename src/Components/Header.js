@@ -32,7 +32,7 @@ export default function Header() {
       {/* <!-- .navbar --> */}
 
       <div className="position-relative">
-        <a href="#" className="mx-2"><span className="bi-facebook"></span></a>
+        <a href="https://www.facebook.com/itsedithindia/" className="mx-2"><span className="bi-facebook"></span></a>
         <a href="#" className="mx-2"><span className="bi-twitter"></span></a>
         <a href="https://www.instagram.com/its_edithindia/" className="mx-2"><span className="bi-instagram"></span></a>
         <a href="#" className="mx-2 js-search-open" style={{'display':'none'}}><span className="bi-search"></span></a>

@@ -101,8 +101,8 @@ export default function Footer() {
 
           <div class="col-md-6">
             <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+            <a href="https://www.facebook.com/itsedithindia/" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="https://www.instagram.com/its_edithindia/" class="instagram"><i class="bi bi-instagram"></i></a>
             </div>
 
