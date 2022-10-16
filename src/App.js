@@ -10,6 +10,7 @@ import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Post from './Pages/Post';
 import Category from './Pages/Category';
+import NotFoundPage from './Pages/NotFoundPage';
 
 
 class App extends Component {
@@ -26,6 +27,7 @@ class App extends Component {
             <Route path="/post/:id" element={<Post />} />
             <Route path="/category" element={<Category />} />
             <Route path="/category/:type" element={<Category />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Router>
 
