@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import NotFoundPage from './Pages/NotFoundPage';
 import Chat from './Pages/Chat';
+import "./App.css";
 
 
 class App extends Component {
