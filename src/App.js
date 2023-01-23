@@ -6,11 +6,8 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Contact from './Pages/Contact';
-import About from './Pages/About';
-import Post from './Pages/Post';
-import Category from './Pages/Category';
 import NotFoundPage from './Pages/NotFoundPage';
+import Chat from './Pages/Chat';
 
 
 class App extends Component {
@@ -21,12 +18,7 @@ class App extends Component {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/contact" element={<Contact />} /> */}
-            {/* <Route path="/about" element={<About />} /> */}
-            <Route path="/post" element={<Post />} />
-            <Route path="/post/:id" element={<Post />} />
-            <Route path="/category" element={<Category />} />
-            <Route path="/category/:type" element={<Category />} />
+            <Route path="/chat" element={<Chat />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Router>
