@@ -1,7 +1,13 @@
 import React from 'react';
 import Header from '../Component/Header';
+import { useEffect } from 'react';
+import { createUserId} from '../Component/CommonFunction';
+
 
 function Home(props) {
+    useEffect(() => {
+        createUserId();
+    });
     return (
         <>
             <Header />
